@@ -21,4 +21,13 @@ public class Intern implements HR {
 		return 5;
 	}
 
+	@Override
+	public double getSalary(){
+		return 0.0;
+	}
+
+	@Override
+	public String getTitle() {
+		return "Intern";
+	}
 }
