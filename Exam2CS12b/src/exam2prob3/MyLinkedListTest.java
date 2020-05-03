@@ -10,6 +10,7 @@ public class MyLinkedListTest {
 		}
 		System.out.println("list="+list);
 		MyLinkedListNode<Integer> n = list.front;
+
 		while (n != null) {
 			System.out.println("n.val="+n.val+" list= "+list);
 			if (n.val % 3==0) {
@@ -24,4 +25,5 @@ public class MyLinkedListTest {
 			System.out.print(m+",");
 		}
 	}
+
 }

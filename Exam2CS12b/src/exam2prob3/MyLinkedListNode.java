@@ -15,7 +15,7 @@ public class MyLinkedListNode<T> {
 	 */
 	public void deleteNext() {
 		// write your code here
-		return;
+		this.next = this.next.next;
 	}
 	
 	/**
@@ -23,7 +23,9 @@ public class MyLinkedListNode<T> {
 	 * @param v
 	 */
 	public void addAfter(T v) {
-		//write your code here
+		MyLinkedListNode<T> tempt = new MyLinkedListNode<>(v);
+		tempt.next = this.next;
+		this.next = tempt;
 		return;
 	}
 }

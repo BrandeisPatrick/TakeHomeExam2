@@ -12,7 +12,6 @@ public class Course {
     String name;
 
 
-
     public Course readCourse(Scanner in){
     	try {
     		this.subject = in.next();
