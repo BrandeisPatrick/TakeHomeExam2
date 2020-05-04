@@ -15,7 +15,9 @@ public class MyLinkedListNode<T> {
 	 */
 	public void deleteNext() {
 		// write your code here
-		this.next = this.next.next;
+		if(this.next != null) {
+			this.next = this.next.next;
+		}
 	}
 	
 	/**
